@@ -7,24 +7,24 @@
     <title>login-ui</title>
 </head>
 <body>
-    <div class="parent-container">
+    <div class="parent-container"> <!--main container which contains child item-->
         <!-- log in box itself-->
         
         <div class="child-item">
             <h3>Social Media Log In</h3>
             <img src="resources/img_avatar2.png" alt="Avatar" class="avatar">
             <form>
-                <label for="Username">Username:</label>
-                <input type="text" placeholder=username><br><br>
-                <label for="password">Password:</label>
-                <input type="password" placeholder=password>
+                <label for="Username" >Username:</label>
+                <input id="username" type="text" placeholder=username>
+                <label for="password" >Password:</label>
+                <input id="password"  type="password" placeholder=password>
             </form><br>
          <!--  <input type="submit" value="Login">  
             <button>Log In </button>  
             <input type="button" value="Log In">
               -->
             <div>
-                <button class="login" type="button" onclick="alert('Form Submitted!')">Log In</button> 
+                <button class="login" type="button" onclick="validate()">Log In</button> <!--pop up window-->
                 <button class="signup" type="button">Sign Up</button>
             </div>
             <br>
@@ -60,6 +60,8 @@
          
 
     </div>
+
+    <script src="login.js"></script>
     
 </body>
 </html>
